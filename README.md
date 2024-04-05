@@ -1,6 +1,6 @@
 # EasieST
 
-Easy-to-use SillyTavern Starter via Docker Compose.
+Easy-to-use SillyTavern Starter, based on Docker Compose.
 
 ## Usage
 
