@@ -1,0 +1,14 @@
+# Docker Compose
+docker-compose.yml
+
+# SillyTavern
+sillytavern/config/**
+!sillytavern/config/.gitkeep
+sillytavern/extensions/**
+!sillytavern/extensions/.gitkeep
+sillytavern/user/**
+!sillytavern/user/.gitkeep
+
+# Models
+models/**
+!models/.gitkeep

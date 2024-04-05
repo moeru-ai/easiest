@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  sillytavern:
+    container_name: easiest_sillytavern
+    image: ghcr.io/sillytavern/sillytavern:latest
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      # https://github.com/SillyTavern/SillyTavern/blob/release/docker/docker-compose.yml
+      - "./sillytavern/extensions:/home/node/app/public/scripts/extensions/third-party"
+      - "./sillytavern/config:/home/node/app/config"
+      - "./sillytavern/user:/home/node/app/public/user"
+
+  llama-cpp:
+    container_name: easiest_llama-cpp
+    image: ghcr.io/ggerganov/llama.cpp:server-intel
+    network_mode: host
+    devices:
+      - /dev/dri/card1:/dev/dri/card1
+      - /dev/dri/renderD128:/dev/dri/renderD128
+      # If you have iGPU, uncomment the following two lines:
+      # - /dev/dri/card2:/dev/dri/card2
+      # - /dev/dri/renderD129:/dev/dri/renderD129
+    environment:
+      - ZES_ENABLE_SYSMAN=1
+    volumes:
+      - ./models:/models
+    command: -sm layer -c 8192 -ngl 33 -m /models/your-model-here.gguf
