@@ -22,11 +22,14 @@ cp intel.docker-compose.yml docker-compose.yml # Intel oneAPI SYCL
 nano docker-compose.yml # edit config
 ```
 
-###### run
+###### up / down
 
 ```bash
 sudo docker compose up -d
 # podman compose up -d # if you use podman
+
+sudo docker compose down
+# podman compose down # if you use podman
 ```
 
 ## FAQ
