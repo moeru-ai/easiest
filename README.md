@@ -1,5 +1,7 @@
 # EasieST
 
+![it works on my machine](https://img.shields.io/badge/it_works_on-my_machine-green)
+
 Easy-to-use SillyTavern Starter, based on Docker Compose.
 
 ## Usage
