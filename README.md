@@ -41,6 +41,8 @@ sudo docker compose down
 > If this section hasn't been updated in a long time, I recommend looking for a
 > new model.
 
+> For GGUF format, I recommend `Q5_K_M` or `Q4_K_M` (and imatrix).
+
 - 7B:
   [Lewdiculous/KukulStanta-7B-GGUF-IQ-Imatrix](https://huggingface.co/Lewdiculous/KukulStanta-7B-GGUF-IQ-Imatrix)
   - SillyTavern Presets:
@@ -50,6 +52,8 @@ sudo docker compose down
       => `./sillytavern/config/instruct`
     - [Lewdicu-Samplers-3.0.2.json](https://huggingface.co/Lewdiculous/Eris_PrimeV4-Vision-32k-7B-GGUF-IQ-Imatrix/blob/main/sillytavern-presets-lewdicu-3.0.2-mistral-0.2/Lewdicu-Samplers-3.0.2.json)
       => `./sillytavern/config/TextGen Settings`
+- 11B:
+  [mradermacher/Fimbulvetr-11B-v2-i1-GGUF](https://huggingface.co/mradermacher/Fimbulvetr-11B-v2-i1-GGUF)
 - 70B:
   [mradermacher/Midnight-Miqu-70B-v1.5-i1-GGUF](https://huggingface.co/mradermacher/Midnight-Miqu-70B-v1.5-i1-GGUF)
   - SillyTavern Presets:
