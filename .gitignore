@@ -4,8 +4,8 @@ docker-compose.yml
 # SillyTavern
 sillytavern/config/**
 !sillytavern/config/.gitkeep
-sillytavern/extensions/**
-!sillytavern/extensions/.gitkeep
+sillytavern/data/**
+!sillytavern/data/.gitkeep
 sillytavern/user/**
 !sillytavern/user/.gitkeep
 

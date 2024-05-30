@@ -8,9 +8,8 @@ services:
     restart: unless-stopped
     volumes:
       # https://github.com/SillyTavern/SillyTavern/blob/release/docker/docker-compose.yml
-      - "./sillytavern/extensions:/home/node/app/public/scripts/extensions/third-party"
       - "./sillytavern/config:/home/node/app/config"
-      - "./sillytavern/user:/home/node/app/public/user"
+      - "./sillytavern/data:/home/node/app/data"
 
   llama-cpp:
     container_name: easiest_llama-cpp
