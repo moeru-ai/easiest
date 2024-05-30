@@ -20,6 +20,9 @@ services:
       - /dev/dri:/dev/dri
     environment:
       - ZES_ENABLE_SYSMAN=1
+      # temporary fix for https://github.com/intel/compute-runtime/issues/710
+      - NEOReadDebugKeys=1
+      - OverrideGpuAddressSpace=48
     volumes:
       - ./models:/models
     command: -sm layer -c 8192 -ngl 33 -m /models/your-model-here.gguf
