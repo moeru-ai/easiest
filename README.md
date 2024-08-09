@@ -36,25 +36,28 @@ sudo docker compose down
 
 ## FAQ
 
-### Recommended Models (2024-04-06)
+### Recommended Models (2024-08-09)
 
 > If this section hasn't been updated in a long time, I recommend looking for a
 > new model.
 
 > For GGUF format, I recommend `Q5_K_M` or `Q4_K_M` (and imatrix).
 
-- 7B:
-  [Lewdiculous/KukulStanta-7B-GGUF-IQ-Imatrix](https://huggingface.co/Lewdiculous/KukulStanta-7B-GGUF-IQ-Imatrix)
-  - SillyTavern Presets:
+- 8B: [Lewdiculous/L3-8B-Stheno-v3.3-32K-GGUF-IQ-Imatrix](https://huggingface.co/Lewdiculous/L3-8B-Stheno-v3.3-32K-GGUF-IQ-Imatrix)
+  - ST Presets:
+    - [[LLAMA-3-Context]Roleplay-v1.9.json](https://huggingface.co/Virt-io/SillyTavern-Presets/blob/main/Prompts/LLAMA-3/v1.9/%5BLLAMA-3-Context%5DRoleplay-v1.9.json) => `./sillytavern/config/context`
+    - [[LLAMA-3-Instruct]Roleplay-v1.9.json](https://huggingface.co/Virt-io/SillyTavern-Presets/blob/main/Prompts/LLAMA-3/v1.9/%5BLLAMA-3-Instruct%5DRoleplay-v1.9.json) => `./sillytavern/config/instruct`
+    - [[Sai]Roleplay.json](https://files.catbox.moe/jxvpek.json) => `./sillytavern/config/TextGen Settings` (from [here](https://huggingface.co/Virt-io/SillyTavern-Presets/discussions/5#664d6fb87c563d4d95151baa))
+- 11B:
+  [mradermacher/Fimbulvetr-11B-v2.1-16K-i1-GGUF](https://huggingface.co/mradermacher/Fimbulvetr-11B-v2.1-16K-i1-GGUF)
+  - ST Presets:
     - [Lewdicu-Context-3.0.2-eros.json](https://huggingface.co/Lewdiculous/Eris_PrimeV4-Vision-32k-7B-GGUF-IQ-Imatrix/blob/main/sillytavern-presets-lewdicu-3.0.2-mistral-0.2/Lewdicu-Context-3.0.2-eros.json)
       => `./sillytavern/config/context`
     - [Lewdicu-Instruct-Alpaca-3.0.2-tentative.json](https://huggingface.co/Lewdiculous/Eris_PrimeV4-Vision-32k-7B-GGUF-IQ-Imatrix/blob/main/sillytavern-presets-lewdicu-3.0.2-mistral-0.2/Lewdicu-Instruct-Alpaca-3.0.2-tentative.json)
       => `./sillytavern/config/instruct`
     - [Lewdicu-Samplers-3.0.2.json](https://huggingface.co/Lewdiculous/Eris_PrimeV4-Vision-32k-7B-GGUF-IQ-Imatrix/blob/main/sillytavern-presets-lewdicu-3.0.2-mistral-0.2/Lewdicu-Samplers-3.0.2.json)
       => `./sillytavern/config/TextGen Settings`
-- 11B:
-  [mradermacher/Fimbulvetr-11B-v2-i1-GGUF](https://huggingface.co/mradermacher/Fimbulvetr-11B-v2-i1-GGUF)
-- 70B:
+<!-- - 70B:
   [mradermacher/Midnight-Miqu-70B-v1.5-i1-GGUF](https://huggingface.co/mradermacher/Midnight-Miqu-70B-v1.5-i1-GGUF)
   - SillyTavern Presets:
     - [prompting-tips](https://huggingface.co/sophosympatheia/Midnight-Miqu-70B-v1.5#prompting-tips)
@@ -62,7 +65,7 @@ sudo docker compose down
     - [instruct-formats](https://huggingface.co/sophosympatheia/Midnight-Miqu-70B-v1.5#instruct-formats)
       => `./sillytavern/config/instruct`
     - [sampler-tips](https://huggingface.co/sophosympatheia/Midnight-Miqu-70B-v1.5#sampler-tips)
-      => `./sillytavern/config/TextGen Settings`
+      => `./sillytavern/config/TextGen Settings` -->
 
 ### Why llama.cpp?
 
