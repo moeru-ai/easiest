@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   sillytavern:
     container_name: easiest_sillytavern
