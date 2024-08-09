@@ -6,6 +6,8 @@ sillytavern/config/**
 !sillytavern/config/.gitkeep
 sillytavern/data/**
 !sillytavern/data/.gitkeep
+sillytavern/plugins/**
+!sillytavern/plugins/.gitkeep
 sillytavern/user/**
 !sillytavern/user/.gitkeep
 

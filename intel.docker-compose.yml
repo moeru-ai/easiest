@@ -10,6 +10,7 @@ services:
       # https://github.com/SillyTavern/SillyTavern/blob/release/docker/docker-compose.yml
       - "./sillytavern/config:/home/node/app/config"
       - "./sillytavern/data:/home/node/app/data"
+      - "./sillytavern/plugins:/home/node/app/plugins"
 
   llama-cpp:
     container_name: easiest_llama-cpp
